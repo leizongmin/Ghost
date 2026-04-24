@@ -80,6 +80,31 @@ Check out our [official documentation](https://ghost.org/docs/) for more informa
 
 For anyone wishing to contribute to Ghost or to hack/customize core files we recommend following our full development setup guides: [Contributor guide](https://ghost.org/docs/contributing/) • [Developer setup](https://ghost.org/docs/install/source/)
 
+#### Monorepo development quickstart
+
+This repository is a Yarn v1 + Nx monorepo. To get a full local development environment (Docker backend + frontend dev servers with HMR):
+
+```bash
+yarn
+yarn setup
+yarn dev
+```
+
+Requirements:
+- Node.js `^22.13.1`
+- Yarn v1
+- Docker + Docker Compose
+
+Useful commands:
+
+```bash
+yarn lint
+yarn test
+yarn test:e2e
+```
+
+For more detailed repository-specific notes (structure, how `yarn dev` works, services/ports), see [AGENTS.md](AGENTS.md).
+
 &nbsp;
 
 # Ghost sponsors
